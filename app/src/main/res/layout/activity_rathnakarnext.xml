@@ -19,13 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:src="@drawable/person2"/>
+        android:src="@drawable/person4"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Congrats you won 150 Gold Coins"
+        android:text="Congrats you won 300 Gold Coins"
         android:textSize="30dp"/>
 
 

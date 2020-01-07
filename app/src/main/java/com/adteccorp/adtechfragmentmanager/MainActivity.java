@@ -24,74 +24,50 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<String> adapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, membername );
         listView.setAdapter( adapter );
         listView.setOnItemClickListener( this );
+        Fragment afragment = new WelcomeFragment();
+        loadFragment( afragment );
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (position == 0) {
 
-            Fragment afragment;
-            afragment = new MohanFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, afragment );
-
-            fragmentTransaction.commit();
+            Fragment afragment = new MohanFragment();
+            loadFragment( afragment );
         }
         if (position == 1) {
-            Fragment bfragment;
-            bfragment = new KishoreFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, bfragment );
-
-            fragmentTransaction.commit();
+          Fragment bfragment = new KishoreFragment();
+          loadFragment( bfragment );
         }
         if (position == 2) {
-            Fragment cfragment;
-            cfragment = new MuraliFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, cfragment );
-
-            fragmentTransaction.commit();
+           Fragment cfragment = new MuraliFragment();
+           loadFragment( cfragment );
         }
         if (position == 3) {
-            Fragment dfragment;
-            dfragment = new RathnakarFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, dfragment );
-
-            fragmentTransaction.commit();
+           Fragment dfragment = new RathnakarFragment();
+           loadFragment( dfragment );
         }
         if (position == 4) {
-            Fragment efragment;
-            efragment = new RohithFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, efragment );
-
-            fragmentTransaction.commit();
+           Fragment efragment = new RohithFragment();
+           loadFragment( efragment );
         }
         if (position == 5) {
-            Fragment ffragment;
-            ffragment = new SaiFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, ffragment );
-
-            fragmentTransaction.commit();
+           Fragment ffragment = new SaiFragment();
+           loadFragment( ffragment );
         }
         if (position == 6) {
-            Fragment gfragment;
-            gfragment = new SunilFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace( R.id.mainfragmentid, gfragment );
-
-            fragmentTransaction.commit();
+           Fragment gfragment = new SunilFragment();
+           loadFragment( gfragment );
         }
+
+    }
+
+    private void loadFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace( R.id.mainfragmentid, fragment );
+
+        fragmentTransaction.commit();
 
     }
 

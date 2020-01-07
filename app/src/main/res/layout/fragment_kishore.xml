@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCE6D6A"
+    android:background="#FDD835"
     android:orientation="vertical"
+
     tools:context=".KishoreFragment">
 
     <TextView
@@ -36,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-
+        android:background="@drawable/btn_bg2"
         android:text="Click Here"
         android:textAllCaps="false" />
 

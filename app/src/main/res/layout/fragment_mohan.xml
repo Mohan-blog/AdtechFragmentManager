@@ -36,8 +36,8 @@
         android:id="@+id/mohanclickme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_margin="30dp"
+        android:background="@drawable/btn_bg1"
         android:text="Click Here"
         android:textAllCaps="false" />
 
