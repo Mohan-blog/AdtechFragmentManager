@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">AdtechFragmentManager</string>
+
+    <string-array name="member">
+        <item>mohan</item>
+        <item>kishore</item>
+        <item>murali</item>
+        <item>rathnakar</item>
+        <item>rohith</item>
+        <item>sai</item>
+        <item>sunil</item>
+    </string-array>
+    <string name="mohan">
+    \nName :Mohan
+    \nAge :22
+    \nRole:Android
+    </string>
+    <string name="sunil">
+    \nName :Sunil
+    \nAge :20
+     \nRole:Student
+    </string>
+    <string name="kishore">
+    \nName :Kishore
+    \nAge :24
+     \nRole:Analyst
+    </string>
+    <string name="murali">
+    \nName :Murali
+    \nAge :23
+     \nRole:Android
+    </string>
+    <string name="rathnakar">
+    \nName :Rathnakar
+    \nAge :23
+        \nRole:All In One
+    </string>
+    <string name="rohit">
+    \nName :Rohith
+    \nAge :22
+     \nRole:Testing
+    </string>
+    <string name="sai">
+    \nName :Sai
+    \nAge :21
+     \nRole:Python
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
