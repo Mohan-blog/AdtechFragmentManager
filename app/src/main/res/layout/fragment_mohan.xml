@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7051A043"
-    android:orientation="vertical"
+
     tools:context=".MohanFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <TextView
@@ -40,6 +44,6 @@
         android:background="@drawable/btn_bg1"
         android:text="Click Here"
         android:textAllCaps="false" />
-
-
 </LinearLayout>
+
+</ScrollView>
